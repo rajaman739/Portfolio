@@ -11,9 +11,9 @@ function About() {
 
         {/* Left Side */}
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
           <h2 className="text-5xl font-bold text-cyan-400 mb-6">
@@ -21,19 +21,22 @@ function About() {
           </h2>
 
           <p className="text-lg text-gray-300 leading-8">
-            I’m <span className="text-cyan-400 font-semibold">Aman Raj</span>,
-            a passionate Computer Science student at SRM University specializing
-            in Blockchain Technology.
+            Hi, I'm <span className="text-cyan-400 font-semibold">Aman Raj</span>,
+            a Computer Science student at SRM Institute of Science and Technology
+            with a strong interest in software development and emerging technologies.
           </p>
 
           <p className="text-lg text-gray-400 leading-8 mt-4">
-            I love building scalable web applications using Java, Spring Boot,
-            MySQL, and exploring innovative technologies like Blockchain and AI.
+            I enjoy building practical applications, exploring new technologies,
+            and solving real-world problems through code. My interests include
+            Full Stack Development, Backend Engineering, Cloud Computing, and
+            Machine Learning.
           </p>
 
           <p className="text-lg text-gray-400 leading-8 mt-4">
-            Currently preparing for placements in 2027 and constantly improving
-            my problem-solving & development skills.
+            Outside academics, I spend time improving my problem-solving skills,
+            working on personal projects, and continuously learning to become a
+            better software engineer.
           </p>
         </motion.div>
 
@@ -43,26 +46,26 @@ function About() {
             {
               icon: <FaUserAstronaut className="text-cyan-400 text-4xl mb-4" />,
               title: "Who I Am",
-              desc: "Passionate developer with a futuristic mindset.",
+              desc: "Computer Science student passionate about technology, software development, and continuous learning.",
             },
             {
               icon: <FaCode className="text-cyan-400 text-4xl mb-4" />,
               title: "What I Do",
-              desc: "Build software, solve DSA problems, and create projects.",
+              desc: "Build web applications, explore new technologies, and strengthen problem-solving through hands-on projects.",
             },
             {
               icon: <FaRocket className="text-cyan-400 text-4xl mb-4" />,
-              title: "Beyond Coding",
-              desc: "Exploring Blockchain, AI, and continuously learning modern technologies.",
+              title: "Career Goal",
+              desc: "Aspiring Software Engineer focused on creating impactful and scalable software solutions.",
             },
           ].map((card, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: index * 0.2 }}
+              transition={{ duration: 0.7, delay: index * 0.15 }}
               viewport={{ once: true }}
-              className="bg-white/5 backdrop-blur-lg border border-cyan-400 rounded-2xl p-6 shadow-lg hover:shadow-cyan-400/50 transition"
+              className="bg-white/5 backdrop-blur-lg border border-cyan-400 rounded-2xl p-6 shadow-lg hover:shadow-cyan-400/30 transition"
             >
               {card.icon}
               <h3 className="text-2xl font-semibold">{card.title}</h3>

@@ -7,25 +7,25 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-black text-white flex items-center justify-center px-8"
+      className="min-h-screen bg-black text-white flex items-center justify-center px-8 pt-20"
     >
-      <div className="max-w-7xl w-full grid md:grid-cols-2 items-center gap-10">
+      <div className="max-w-7xl w-full grid md:grid-cols-2 items-center gap-12">
 
         {/* Left Side */}
         <div>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8 }}
             className="text-cyan-400 text-xl mb-3"
           >
             Hello, I'm
           </motion.p>
 
           <motion.h1
-            initial={{ opacity: 0, y: -40 }}
+            initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-bold leading-tight"
           >
             Aman <span className="text-cyan-400">Raj</span>
@@ -34,9 +34,9 @@ function Hero() {
           <div className="text-2xl md:text-3xl mt-4 text-gray-400 font-semibold">
             <ReactTyped
               strings={[
-                "Software Developer",
-                "Problem Solver",
-                "Blockchain Enthusiast",
+                "Java Developer",
+                "Full Stack Developer",
+                "Software Engineer Aspirant",
               ]}
               typeSpeed={50}
               backSpeed={30}
@@ -44,72 +44,74 @@ function Hero() {
             />
           </div>
 
-          <p className="text-gray-500 mt-6 text-lg max-w-lg leading-8">
-            Computer Science student specializing in Blockchain Technology,
-            passionate about transforming ideas into impactful digital solutions
-            through innovation, problem-solving, and modern technologies.
+          <p className="text-gray-400 mt-6 text-lg max-w-xl leading-8">
+            B.Tech Computer Science student at SRM Institute of Science and
+            Technology with interests in Full Stack Development, Backend
+            Engineering, Cloud Computing, and Machine Learning. Passionate
+            about building practical software solutions and continuously
+            improving problem-solving skills.
           </p>
 
           {/* Buttons */}
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex gap-4 flex-wrap">
             <a
               href="#projects"
-              className="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 hover:shadow-cyan-400/50 hover:scale-105 transition duration-300"
+              className="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition duration-300"
             >
-              Explore My Work
+              Projects
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1MX8sD2_nbSvq5d_Pu01p2E4hi5Uat1xK/view?usp=sharing"
+              href="https://drive.google.com/file/d/1s1juIVil4zgpJN5MJ9e_xBBTZTmKuF_d/view?usp=sharing"
               target="_blank"
-              rel="noreferrer"
-              className="border border-cyan-400 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-400 hover:text-black hover:shadow-cyan-400/50 hover:scale-105 transition duration-300"
+              rel="noopener noreferrer"
+              className="border border-cyan-400 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-400 hover:text-black transition duration-300"
             >
               Resume
             </a>
           </div>
 
-          {/* Icons */}
+          {/* Social Icons */}
           <div className="flex gap-6 text-3xl mt-8">
             <a
               href="https://github.com/rajaman739"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
-              <FaGithub className="hover:text-cyan-400 cursor-pointer" />
+              <FaGithub className="hover:text-cyan-400 transition" />
             </a>
 
             <a
               href="https://www.linkedin.com/in/amanraj7399/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
-              <FaLinkedin className="hover:text-cyan-400 cursor-pointer" />
+              <FaLinkedin className="hover:text-cyan-400 transition" />
             </a>
 
             <a
               href="https://leetcode.com/u/rajaman7399/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
-              <SiLeetcode className="hover:text-cyan-400 cursor-pointer" />
+              <SiLeetcode className="hover:text-cyan-400 transition" />
             </a>
           </div>
         </div>
 
         {/* Right Side */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.9 }}
           animate={{
             opacity: 1,
             scale: 1,
-            y: [0, -15, 0],
+            y: [0, -10, 0],
           }}
           transition={{
             duration: 1,
             y: {
               repeat: Infinity,
-              duration: 3,
+              duration: 4,
             },
           }}
           className="flex justify-center"
@@ -124,6 +126,7 @@ function Hero() {
             />
           </div>
         </motion.div>
+
       </div>
     </section>
   );

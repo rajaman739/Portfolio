@@ -15,29 +15,66 @@ function ParticlesBg() {
           enable: true,
           zIndex: -1,
         },
+
         background: {
           color: "#000000",
         },
+
+        fpsLimit: 60,
+
         particles: {
           number: {
-            value: 40,
+            value: 25,
           },
+
           color: {
-            value: "#00ffff",
+            value: "#22d3ee",
           },
+
           links: {
             enable: true,
-            color: "#00ffff",
-            distance: 120,
+            color: "#22d3ee",
+            distance: 150,
+            opacity: 0.15,
+            width: 1,
           },
+
           move: {
             enable: true,
-            speed: 1,
+            speed: 0.5,
           },
+
+          opacity: {
+            value: 0.3,
+          },
+
           size: {
-            value: 2,
+            value: {
+              min: 1,
+              max: 3,
+            },
           },
         },
+
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "grab",
+            },
+          },
+
+          modes: {
+            grab: {
+              distance: 140,
+              links: {
+                opacity: 0.4,
+              },
+            },
+          },
+        },
+
+        detectRetina: true,
       }}
     />
   );
