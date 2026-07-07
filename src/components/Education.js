@@ -7,7 +7,7 @@ function Education() {
       year: "2023 - 2027",
       title: "B.Tech Computer Science Engineering (Blockchain Technology)",
       place: "SRM Institute of Science and Technology",
-      score: "CGPA: 8.24 / 10",
+      score: "CGPA: 8.32 / 10",
       logo: "/images/SRM.jpg",
       icon: <FaGraduationCap />,
     },

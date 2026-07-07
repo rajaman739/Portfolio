@@ -5,14 +5,14 @@ function Experience() {
   const experiences = [
     {
       company: "Vault of Code (AICTE)",
-      role: "Full Stack Developer Intern",
+      role: "Web Development Intern",
       duration: "June 2026 – Present",
       location: "Remote",
       details: [
-        "Working on full-stack web applications using modern frontend and backend technologies.",
-        "Developing and integrating REST APIs for application functionality and data management.",
-        "Collaborating on feature implementation, debugging, and performance improvements.",
-        "Using Git and GitHub for version control and project collaboration.",
+        "Developing full-stack web applications using React.js and Spring Boot for frontend and backend functionality.",
+        "Building and integrating RESTful APIs with MySQL to support application features and data management.",
+        "Collaborating on feature development, debugging, and performance optimization to improve application reliability.",
+        "Applying software development best practices including testing, Git version control, and code quality standards.",
       ],
     },
   ];

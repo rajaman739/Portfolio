@@ -152,7 +152,7 @@ function Navbar() {
 
           <li>
             <a
-              href="https://drive.google.com/file/d/1s1juIVil4zgpJN5MJ9e_xBBTZTmKuF_d/view?usp=sharing"
+              href="https://drive.google.com/file/d/1hgULx066L8uyOmipTdshfTGJBa-Qc8Vi/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setNav(false)}

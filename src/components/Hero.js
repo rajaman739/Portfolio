@@ -62,7 +62,7 @@ function Hero() {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1s1juIVil4zgpJN5MJ9e_xBBTZTmKuF_d/view?usp=sharing"
+              href="https://drive.google.com/file/d/1hgULx066L8uyOmipTdshfTGJBa-Qc8Vi/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-cyan-400 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-400 hover:text-black transition duration-300"
